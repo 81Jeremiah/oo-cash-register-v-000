@@ -18,7 +18,7 @@ class CashRegister
   end
 #binding.pry
   def apply_discount
-    #binding.pry
+    binding.pry
     if self.discount == 0
       "There is no discount to apply."
 
