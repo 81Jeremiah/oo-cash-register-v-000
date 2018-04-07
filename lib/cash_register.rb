@@ -24,7 +24,7 @@ class CashRegister
 
     else
       @total = self.total - (self.total.to_f * (self.discount.to_f/100)).to_i
-     "After the discount, the total comes to $#{@total}."
+     "After the discount, the total comes to $#{self.total}."
     #binding.pry
    end
   end
