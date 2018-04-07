@@ -22,6 +22,7 @@ class CashRegister
     @total
     new_arr = Array.new(quantity,title)
     @items << new_arr
+    @items.flatten
   end
 
   def apply_discount
