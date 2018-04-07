@@ -1,7 +1,7 @@
 require 'pry'
 
 class CashRegister
-  attr_accessor :total, :last_transaction
+  attr_accessor :total, :last_transaction :employee_discount
     #@@items = []
   def initialize(employee_discount = 0)
     #@total = total
@@ -30,7 +30,8 @@ class CashRegister
     if @employee_discount == 0
       "There is no discount to apply."
 
-    else @total = @total -  (@employee_discount * 10)
+    else
+      @total = @total -  (@employee_discount * 10)
     #binding.pry
      "After the discount, the total comes to $#{@total}."
    end
