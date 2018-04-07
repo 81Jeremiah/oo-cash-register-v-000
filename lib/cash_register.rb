@@ -12,7 +12,6 @@ class CashRegister
   def add_item(title,price, quantity = 1)
     @last_transaction = price * quantity
     @total = @last_transaction + @total
-  #  @total
     new_arr = Array.new(quantity,title)
     @items << new_arr
     @items.flatten!
@@ -25,12 +24,12 @@ class CashRegister
     else
       @total = @total -  (@discount * 10)
      "After the discount, the total comes to $#{@total}."
+     binding.pry
    end
   end
 
   def void_last_transaction
     @total = @total - @last_transaction
-    #@total
   end
 
 end
