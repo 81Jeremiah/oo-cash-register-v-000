@@ -12,9 +12,9 @@ class CashRegister
   #  binding.pry
   end
 
-  def discount
-    @employee_discount
-  end
+  # def discount
+  #   @employee_discount
+  # end
 
   def add_item(title,price, quantity = 1)
     @last_transaction = price * quantity
