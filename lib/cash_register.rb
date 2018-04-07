@@ -20,6 +20,7 @@ class CashRegister
     @last_transaction = price * quantity
     @total = @last_transaction + @total
     @total
+    bindg.pry
     new_arr = Array.new(quantity,title)
     @items << new_arr
     @items.flatten!
