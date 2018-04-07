@@ -15,10 +15,11 @@ class CashRegister
     new_arr = Array.new(quantity,title)
     @items << new_arr
     @items.flatten!
+    binding.pry
   end
 #binding.pry
   def apply_discount
-    binding.pry
+    #binding.pry
     if self.discount == 0
       "There is no discount to apply."
 
