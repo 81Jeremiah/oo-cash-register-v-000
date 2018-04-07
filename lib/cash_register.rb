@@ -16,7 +16,7 @@ class CashRegister
     @items << new_arr
     @items.flatten!
   end
-bindin.pry
+binding.pry
   def apply_discount
     #binding.pry
     if self.discount == 0
