@@ -11,7 +11,7 @@ class CashRegister
 
   def add_item(title,price, quantity = 1)
     @last_transaction = price * quantity
-    @total = @last_transaction + @total
+    @total = self.last_transaction + self.total
     new_arr = Array.new(quantity,title)
     @items << new_arr
     @items.flatten!
