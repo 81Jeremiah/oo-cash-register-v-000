@@ -1,7 +1,7 @@
 require 'pry'
 
 class CashRegister
-  attr_accessor :total :last_transaction
+  attr_accessor :total, :last_transaction
     #@@items = []
   def initialize(employee_discount = 0)
     #@total = total
