@@ -20,7 +20,7 @@ class CashRegister
 
     @total = (price * quantity) + @total
     @total
-    new_arr = Array.new (quantity,title)
+    new_arr = Array.new(quantity,title)
     @items << new_arr
   end
 
