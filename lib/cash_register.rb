@@ -21,7 +21,7 @@ class CashRegister
     @total = (price * quantity) + @total
     @total
     new_arr = Array.new (quantity,title)
-    @items << Array.new (quantity,title)
+    @items << new_arr
   end
 
   def apply_discount
