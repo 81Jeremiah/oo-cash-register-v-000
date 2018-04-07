@@ -15,7 +15,6 @@ class CashRegister
     new_arr = Array.new(quantity,title)
     @items << new_arr
     @items.flatten!
-    binding.pry
   end
 
   def apply_discount
